@@ -59,6 +59,7 @@ endif()
 # Disabled importers: m3d for 5.1 or later
 ADD_DEFINITIONS( -DASSIMP_BUILD_NO_M3D_IMPORTER)
 ADD_DEFINITIONS( -DASSIMP_BUILD_NO_M3D_EXPORTER)
+add_compile_options( -Wno-unknown-pragmas)
 # Toggles the use of the hunter package manager
 option(ASSIMP_HUNTER_ENABLED "Enable Hunter package manager support" OFF)
 
